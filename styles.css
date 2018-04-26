@@ -3,7 +3,25 @@ body {
   background: #63747a;
 }
 
+#doors {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: calc(50% - 110px);
+  left: 0;
+}
+
 a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  color: #c0c2c9;
+  width: 200px;
+  height: 220px;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
 }

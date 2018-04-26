@@ -10,7 +10,7 @@ body {
 .cloud {
   position: absolute;
   fill: #e7f2f8;
-  width: 10vw;
+  width: 100px;
   height: auto;
 }
 
@@ -51,11 +51,12 @@ body {
 
 #shark {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   fill: #ffa384;
-  width: 10vw;
+  width: 80px;
+  height: 80px;
   left: 10%;
-  top: 50%;
+  top: calc(50% + 40px);
   transform: scaleX(-1);
 }
 

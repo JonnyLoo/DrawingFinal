@@ -1,0 +1,50 @@
+body {
+  background: #000000 url('./bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.orbit {
+  position: absolute;
+  bottom: 300px;
+  left: 600px;
+  width: 250px;
+  height: 250px;
+  animation: orbit 10s linear infinite;
+}
+
+.planet {
+  fill: #bcece0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(45deg);
+}
+
+.comet {
+  fill: #f652a0;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+#c1 {
+  top: 0;
+  left: 0;
+}
+
+#c2 {
+  top: calc(50vh - 150px);
+  right: 0;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotateZ(0deg) translateX(400px) rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg) translateX(400px) rotateZ(-360deg);
+  }
+}

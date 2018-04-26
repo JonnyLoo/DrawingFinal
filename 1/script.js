@@ -19,7 +19,7 @@ function random(min, max) {
 
 const spd = [];
 for(let i = 0; i < 5; i++) {
-  spd[i] = random(.1, .4);
+  spd[i] = random(.1, .3);
 }
 
 function move() {
